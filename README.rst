@@ -11,3 +11,6 @@ Please see the [Contributing to ROS 2 Documentation](https://docs.ros.org/en/rol
 ## Contributing to ROS 2
 
 To contribute to the ROS 2 source code project please refer to the [ROS 2 contributing guidelines](https://docs.ros.org/en/rolling/The-ROS2-Project/Contributing.html).
+
+
+.. include:: source/The-ROS2-Project/Contributing/Contributing-To-ROS-2-Documentation.rst
