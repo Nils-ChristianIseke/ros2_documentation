@@ -119,9 +119,12 @@ Set up your environment by sourcing the following file.
 
 .. code-block:: console
 
-   ~ Replace ".bash" with your shell if you're not using bash
-   ~ Possible values are: setup.bash, setup.sh, setup.zsh
    $ . ~/ros2_{DISTRO}/install/local_setup.bash
+
+.. note::
+
+   Replace ".bash" with your shell if you're not using bash
+   Possible values are: setup.bash, setup.sh, setup.zsh
 
 .. _talker-listener:
 

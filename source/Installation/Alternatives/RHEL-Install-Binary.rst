@@ -126,9 +126,12 @@ Set up your environment by sourcing the following file.
 
 .. code-block:: console
 
-   ~ Replace ".bash" with your shell if you're not using bash
-   ~ Possible values are: setup.bash, setup.sh, setup.zsh
    $ . ~/ros2_{DISTRO}/ros2-linux/setup.bash
+
+.. note::
+
+   Replace ".bash" with your shell if you're not using bash
+   Possible values are: setup.bash, setup.sh, setup.zsh
 
 Try some examples
 -----------------
