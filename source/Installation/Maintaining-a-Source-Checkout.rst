@@ -32,15 +32,15 @@ If you wish to checkout the latest code for ROS 2 {DISTRO_TITLE}, you can get th
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
-       cd ~/ros2_{DISTRO}
-       mv -i ros2.repos ros2.repos.old
-       wget https://raw.githubusercontent.com/ros2/ros2/{REPOS_FILE_BRANCH}/ros2.repos
+       $ cd ~/ros2_{DISTRO}
+       $ mv -i ros2.repos ros2.repos.old
+       $ wget https://raw.githubusercontent.com/ros2/ros2/{REPOS_FILE_BRANCH}/ros2.repos
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
        cd ~/ros2_{DISTRO}
        mv -i ros2.repos ros2.repos.old
@@ -48,7 +48,7 @@ If you wish to checkout the latest code for ROS 2 {DISTRO_TITLE}, you can get th
 
   .. group-tab:: Windows
 
-    .. code-block:: bash
+    .. code-block:: console
 
        # CMD
        cd \dev\ros2_{DISTRO}
@@ -66,7 +66,7 @@ You will notice that in the `ros2.repos <https://raw.githubusercontent.com/ros2/
 It is possible that these versions refer to new tags/branches that your local copy of the repositories will not recognize as they are out-of-date.
 Because of this, you should update the repositories that you have already checked out with the following command:
 
-.. code-block:: bash
+.. code-block:: console
 
    vcs custom --args remote update
 
@@ -79,38 +79,42 @@ You should now be able to download the sources associated with the new repositor
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
        vcs import src < ros2.repos
        vcs pull src
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
        vcs import src < ros2.repos
        vcs pull src
 
   .. group-tab:: Windows
 
-    .. code-block:: bash
+   In a Windows command line interface:
 
-       # CMD
-       vcs import src < ros2.repos
-       vcs pull src
+      .. code-block:: console
 
-       # PowerShell
-       vcs import --input ros2.repos src
-       vcs pull src
+       $ vcs import --input ros2.repos src
+       $ vcs pull src
+
+      Or in powershell:
+
+      .. code-block:: console
+
+       $ vcs import --input ros2.repos src
+       $ vcs pull src
 
 Rebuild your workspace
 ----------------------
 
 Now that the workspace is up to date with the latest sources, remove your previous install and rebuild your workspace with, for example:
 
-.. code-block:: bash
+.. code-block:: console
 
-   colcon build --symlink-install
+   $ colcon build --symlink-install
 
 Inspect your source checkout
 ----------------------------
@@ -122,23 +126,23 @@ If you wish to know the versions of the set of repositories in your workspace, y
 
   .. group-tab:: Linux
 
-    .. code-block:: bash
+    .. code-block:: console
 
-       cd ~/ros2_{DISTRO}
-       vcs export src > my_ros2.repos
+       $ cd ~/ros2_{DISTRO}
+       $ vcs export src > my_ros2.repos
 
   .. group-tab:: macOS
 
-    .. code-block:: bash
+    .. code-block:: console
 
-       cd ~/ros2_{DISTRO}
-       vcs export src > my_ros2.repos
+       $ cd ~/ros2_{DISTRO}
+       $ vcs export src > my_ros2.repos
 
   .. group-tab:: Windows
 
-    .. code-block:: bash
+    .. code-block:: console
 
-       cd \dev\ros2_{DISTRO}
-       vcs export src > my_ros2.repos
+       $ cd \dev\ros2_{DISTRO}
+       $ vcs export src > my_ros2.repos
 
 This ``my_ros2.repos`` file can then be shared with others so that they can reproduce the state of the repositories in your workspace.

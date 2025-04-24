@@ -35,7 +35,7 @@ Installation
 Option 1: Install from the ROS 2 apt repository (Recommended)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block:: bash
+.. code-block:: console
 
    sudo apt install ros-{DISTRO}-rmw-gurumdds-cpp
 
