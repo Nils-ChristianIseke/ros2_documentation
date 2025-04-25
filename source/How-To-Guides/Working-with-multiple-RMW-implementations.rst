@@ -137,7 +137,6 @@ and
 it will generate a daemon with a Fast DDS implementation:
 
 .. code-block:: bash
-TODO: I dont get this
    21318 22.0  0.6 535896 55044 pts/8    Sl   16:14   0:00 /usr/bin/python3 /opt/ros/{DISTRO}/bin/_ros2_daemon --rmw-implementation rmw_fastrtps_cpp --ros-domain-id 0
 
 Even if you run the command line tool again with the correct RMW implementation, the daemon's RMW implementation will not change and the ROS 2 command line tools will fail.
@@ -179,7 +178,7 @@ To increase the settings permanently, you will need to edit or create the file `
 Creating or editing this file will require root permissions.
 Either add to your existing ``etc/sysctl.conf`` file or create ``/etc/sysctl.conf`` with the following lines:
 
-.. code-block:: console
+.. code-block:: bash
 
    kern.sysv.shmmax=419430400
    kern.sysv.shmmin=1

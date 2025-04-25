@@ -96,14 +96,14 @@ Desktop Install (Recommended): ROS, RViz, demos, tutorials.
 
 .. code-block:: console
 
-   sudo dnf install ros-{DISTRO}-desktop
+   $ sudo dnf install ros-{DISTRO}-desktop
 
 ROS-Base Install (Bare Bones): Communication libraries, message packages, command line tools.
 No GUI tools.
 
 .. code-block:: console
 
-   sudo dnf install ros-{DISTRO}-ros-base
+   $ sudo dnf install ros-{DISTRO}-ros-base
 
 Install additional RMW implementations (optional)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -118,9 +118,12 @@ Set up your environment by sourcing the following file.
 
 .. code-block:: console
 
-   ~ Replace ".bash" with your shell if you're not using console
-   ~ Possible values are: setup.bash, setup.sh, setup.zsh
    $ source /opt/ros/{DISTRO}/setup.bash
+
+.. note::
+   
+   Replace ".bash" with your shell if you're not using console
+   Possible values are: setup.bash, setup.sh, setup.zsh
 
 Try some examples
 -----------------

@@ -58,16 +58,18 @@ Start the talker and listener
 
 Start both the talker and the listener again, each in its own terminal.
 The security environment variables are not set so security is not enabled for these sessions.
+In one terminal run:
 
 .. code-block:: console
 
-  ~ Disable ROS Security for both terminals
   $ unset ROS_SECURITY_ENABLE
-
-  ~ In terminal 1:
   $ ros2 run demo_nodes_cpp talker --ros-args --enclave /talker_listener/talker
 
-  ~ In terminal 2:
+In another terminal run:
+
+.. code-block:: console
+
+  $ unset ROS_SECURITY_ENABLE
   $ ros2 run demo_nodes_cpp listener --ros-args --enclave /talker_listener/listener
 
 

@@ -42,21 +42,25 @@ If you wish to checkout the latest code for ROS 2 {DISTRO_TITLE}, you can get th
 
     .. code-block:: console
 
-       cd ~/ros2_{DISTRO}
-       mv -i ros2.repos ros2.repos.old
-       wget https://raw.githubusercontent.com/ros2/ros2/{REPOS_FILE_BRANCH}/ros2.repos
+       $ cd ~/ros2_{DISTRO}
+       $ mv -i ros2.repos ros2.repos.old
+       $ wget https://raw.githubusercontent.com/ros2/ros2/{REPOS_FILE_BRANCH}/ros2.repos
 
   .. group-tab:: Windows
 
+    Use a windows comand line interface:
+
     .. code-block:: console
 
-       # CMD
-       cd \dev\ros2_{DISTRO}
-       curl -sk https://raw.githubusercontent.com/ros2/ros2/{REPOS_FILE_BRANCH}/ros2.repos -o ros2.repos
-
-       # PowerShell
-       cd \dev\ros2_{DISTRO}
-       curl https://raw.githubusercontent.com/ros2/ros2/{REPOS_FILE_BRANCH}/ros2.repos -o ros2.repos
+       $ cd \dev\ros2_{DISTRO}
+       $ curl -sk https://raw.githubusercontent.com/ros2/ros2/{REPOS_FILE_BRANCH}/ros2.repos -o ros2.repos
+    
+    Or a powershell:
+    
+    .. code-block:: console
+       
+       $ cd \dev\ros2_{DISTRO}
+       $ curl https://raw.githubusercontent.com/ros2/ros2/{REPOS_FILE_BRANCH}/ros2.repos -o ros2.repos
 
 
 Update your repositories
@@ -68,7 +72,7 @@ Because of this, you should update the repositories that you have already checke
 
 .. code-block:: console
 
-   vcs custom --args remote update
+   $ vcs custom --args remote update
 
 Download the new source code
 ----------------------------
@@ -81,15 +85,15 @@ You should now be able to download the sources associated with the new repositor
 
     .. code-block:: console
 
-       vcs import src < ros2.repos
-       vcs pull src
+       $ vcs import src < ros2.repos
+       $ vcs pull src
 
   .. group-tab:: macOS
 
     .. code-block:: console
 
-       vcs import src < ros2.repos
-       vcs pull src
+       $ vcs import src < ros2.repos
+       $ vcs pull src
 
   .. group-tab:: Windows
 

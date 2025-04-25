@@ -36,11 +36,15 @@ You need the following things installed to build ROS 2:
      .. code-block:: console
 
         $ xcode-select --install
-        ~ This command will not succeed if you have not installed Xcode.app
         $ sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
-        ~ If you installed Xcode.app manually, you need to either open it or run:
-        $ sudo xcodebuild -license
-        ~ To accept the Xcode.app license
+   
+   .. note::
+      If you installed Xcode.app manually, you need to accept the Xcode.app license.
+      You can do this by opening Xcode.app or running:
+      
+      .. code-block:: console
+
+         $ sudo xcodebuild -license
 
 #.
    **brew** *(needed to install more stuff; you probably already have this)*:
@@ -52,7 +56,7 @@ You need the following things installed to build ROS 2:
 
      .. code-block:: console
 
-        brew doctor
+        $ brew doctor
 
      Fix any problems that it identifies.
 
@@ -61,7 +65,7 @@ You need the following things installed to build ROS 2:
 
    .. code-block:: console
 
-      brew install asio assimp bison bullet cmake console_bridge cppcheck \
+      $ brew install asio assimp bison bullet cmake console_bridge cppcheck \
         cunit eigen freetype graphviz opencv openssl orocos-kdl pcre poco \
         pyqt@5 python qt@5 sip spdlog tinyxml2
 

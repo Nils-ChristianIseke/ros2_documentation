@@ -55,7 +55,7 @@ Begin by creating an empty keystore on ``Bob``; the keystore is actually just an
 
   .. group-tab:: Windows
 
-    .. code-block:: bat
+    .. code-block:: console
 
       $ ssh Bob
       $ md C:\dev\ros2\sros2_demo
@@ -86,7 +86,7 @@ Since the keys are just text files, we can use ``scp`` to copy them.
 
   .. group-tab:: Windows
 
-    .. code-block:: bat
+    .. code-block:: console
 
       $ cd C:\dev\ros2\sros2_demo\demo_keystore
       $ scp -r talker USERNAME@Bob:/dev/ros2/sros2_demo/demo_keystore

@@ -109,7 +109,7 @@ Run the demo
 
     .. group-tab:: Windows
 
-      .. code-block:: bat
+      .. code-block:: console
 
         $ md C:\dev\ros2\sros2_demo
 
@@ -137,7 +137,7 @@ Files in the keystore will be used to enable security for all the participants i
 
   .. group-tab:: Windows
 
-    .. code-block:: bat
+    .. code-block:: console
 
       $ cd sros2_demo
       $ ros2 security create_keystore demo_keystore
@@ -167,7 +167,7 @@ This command uses the ``create_enclave`` feature which is covered in more detail
 
   .. group-tab:: Windows
 
-    .. code-block:: bat
+    .. code-block:: console
 
       $ ros2 security create_enclave demo_keystore /talker_listener/talker
       $ ros2 security create_enclave demo_keystore /talker_listener/listener
@@ -175,7 +175,7 @@ This command uses the ``create_enclave`` feature which is covered in more detail
 
     If ``unable to write 'random state'`` appears then set the environment variable ``RANDFILE``.
 
-    .. code-block:: bat
+    .. code-block:: console
 
       $ set RANDFILE=C:\dev\ros2\sros2_demo\.rnd
 
@@ -208,7 +208,7 @@ These and other security-related environment variables are described in the `ROS
 
   .. group-tab:: Windows
 
-    .. code-block:: bat
+    .. code-block:: console
 
       $ set ROS_SECURITY_KEYSTORE=%cd%/demo_keystore
       $ set ROS_SECURITY_ENABLE=true
@@ -272,7 +272,7 @@ Open an another terminal and set up the following environmental variables.
 
   .. group-tab:: Windows
 
-    .. code-block:: bat
+    .. code-block:: console
 
       $ set ROS_SECURITY_KEYSTORE=%cd%/demo_keystore
       $ set ROS_SECURITY_ENABLE=true
