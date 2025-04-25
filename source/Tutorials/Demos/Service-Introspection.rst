@@ -169,13 +169,13 @@ To change it to user data contents with metadata:
 To change it to only metadata:
 
 .. code-block:: console
-    
+
     $ ros2 param set /introspection_service service_configure_introspection metadata
 
 To disable:
 
 .. code-block:: console
-    
+
     $ ros2 param set /introspection_service service_configure_introspection disabled
 
 IntrospectionClientNode:
@@ -303,7 +303,7 @@ To change it to user data contents with metadata:
 
     $ ros2 param set /introspection_client client_configure_introspection contents
 
-To change it to only metadata:    
+To change it to only metadata:
 
 .. code-block:: console
 

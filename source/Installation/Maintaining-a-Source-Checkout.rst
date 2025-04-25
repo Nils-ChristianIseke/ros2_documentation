@@ -54,11 +54,11 @@ If you wish to checkout the latest code for ROS 2 {DISTRO_TITLE}, you can get th
 
        $ cd \dev\ros2_{DISTRO}
        $ curl -sk https://raw.githubusercontent.com/ros2/ros2/{REPOS_FILE_BRANCH}/ros2.repos -o ros2.repos
-    
+
     Or a powershell:
-    
+
     .. code-block:: console
-       
+
        $ cd \dev\ros2_{DISTRO}
        $ curl https://raw.githubusercontent.com/ros2/ros2/{REPOS_FILE_BRANCH}/ros2.repos -o ros2.repos
 

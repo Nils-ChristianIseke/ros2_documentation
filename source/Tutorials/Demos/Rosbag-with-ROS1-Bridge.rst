@@ -18,20 +18,21 @@ Recording topic data with rosbag and ROS 1 Bridge
 In this example, we'll be using the ``cam2image`` demo program that comes with ROS 2 and a Python script to emulate a simple turtlebot-like robot's sensor data so that we can bridge it to ROS 1 and use rosbag to record it.
 
 First we'll run a ROS 1 ``roscore`` in a new shell:
+
 .. tabs::
-   
+
    .. group-tab:: Linux
-      
+
       .. code-block:: console
-         
+
          $ . /opt/ros/kinetic/setup.bash
          $ roscore
 
 
    .. group-tab:: macOS
-      
+
       .. code-block:: console
-         
+
          $ . ~/ros_catkin_ws/install_isolated/setup.bash
          $ rocore
 
@@ -44,24 +45,24 @@ Then we'll run the ROS 1 <=> ROS 2 ``dynamic_bridge`` with the ``--bridge-all-to
    Remember to replace ``<workspace-with-bridge>`` with the path to where you either extracted the ROS 2 binary or where you built ROS 2 from source.
 
 .. tabs::
-   
+
    .. group-tab:: Linux
-      
+
       .. code-block:: console
-         
-      $ . /opt/ros/kinetic/setup.bash
-      $ . /opt/ros/ardent/setup.bash
-      $ export ROS_MASTER_URI=http://localhost:11311
-      $ ros2 run ros1_bridge dynamic_bridge --bridge-all-topics
+
+       $ . /opt/ros/kinetic/setup.bash
+       $ . /opt/ros/ardent/setup.bash
+       $ export ROS_MASTER_URI=http://localhost:11311
+       $ ros2 run ros1_bridge dynamic_bridge --bridge-all-topics
 
    .. group-tab:: macOS
 
-      ..code-block:: console
-         
-      $ . ~/ros_catkin_ws/install_isolated/setup.bash
-      $ . /opt/ros/ardent/setup.bash
-      $ export ROS_MASTER_URI=http://localhost:11311
-      $ ros2 run ros1_bridge dynamic_bridge --bridge-all-topics
+      .. code-block:: console
+
+       $ . ~/ros_catkin_ws/install_isolated/setup.bash
+       $ . /opt/ros/ardent/setup.bash
+       $ export ROS_MASTER_URI=http://localhost:11311
+       $ ros2 run ros1_bridge dynamic_bridge --bridge-all-topics
 
 
 ----
@@ -136,11 +137,11 @@ You can run this python script in a new ROS 2 shell:
 Now that all the data sources and the dynamic bridge are running, we can look at the available topics in a new ROS 1 shell:
 
 .. tabs::
-   
+
    .. group-tab:: Linux
-      
+
       .. code-block:: console
-         
+
        $ . /opt/ros/kinetic/setup.bash
        $ rostopic list
        /image
@@ -153,7 +154,7 @@ Now that all the data sources and the dynamic bridge are running, we can look at
    .. group-tab:: macOS
 
       .. code-block:: console
-         
+
        $ . ~/ros_catkin_ws/install_isolated/setup.bash
        $ rostopic list
        /image
@@ -193,16 +194,16 @@ Then in a new shell start the ``roscore``:
 .. tabs::
 
    .. group-tab:: Linux
-      
+
       .. code-block:: console
-         
+
        $ . /opt/ros/kinetic/setup.bash
        $ roscore
-   
+
    .. group-tab:: macOS
 
       .. code-block:: console
-         
+
        $ . ~/ros_catkin_ws/install_isolated/setup.bash
        $ roscore
 
@@ -212,9 +213,9 @@ Then run the ``dynamic_bridge`` in another shell:
 .. tabs::
 
    .. group-tab:: Linux
-      
+
       .. code-block:: console
-         
+
        $ . /opt/ros/kinetic/setup.bash
        $ . /opt/ros/ardent/setup.bash
        $ export ROS_MASTER_URI=http://localhost:11311
@@ -223,7 +224,7 @@ Then run the ``dynamic_bridge`` in another shell:
    .. group-tab:: macOS
 
       .. code-block:: console
-         
+
        $ . ~/ros_catkin_ws/install_isolated/setup.bash
        $ . /opt/ros/ardent/setup.bash
        $ export ROS_MASTER_URI=http://localhost:11311
@@ -235,15 +236,16 @@ Then play the bag data back with ``rosbag play`` in another new shell, using the
 .. tabs::
 
    .. group-tab:: Linux
-      
+
       .. code-block:: console
-         
+
        $ . /opt/ros/kinetic/setup.bash
        $ rosbag play --loop path/to/bag_file
 
    .. group-tab:: macOS
+
       .. code-block:: console
-         
+
        $ . ~/ros_catkin_ws/install_isolated/setup.bash
        $ rosbag play --loop path/to/bag_file
 

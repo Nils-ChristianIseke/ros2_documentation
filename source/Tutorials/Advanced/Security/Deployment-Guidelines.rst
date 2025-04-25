@@ -170,6 +170,7 @@ In the first terminal, run:
 In the second terminal, run:
 
 .. code-block:: console
+
   $ docker exec -it tutorial-talker-1 bash
   $ cd keystore
   $ tree

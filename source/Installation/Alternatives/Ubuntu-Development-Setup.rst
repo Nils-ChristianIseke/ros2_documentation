@@ -123,8 +123,8 @@ Set up your environment by sourcing the following file.
 
 .. note::
 
-   Replace ".bash" with your shell if you're not using bash
-   Possible values are: setup.bash, setup.sh, setup.zsh
+   Replace ``.bash`` with your shell if you're not using bash.
+   Possible values are: ``setup.bash``, ``setup.sh``, ``setup.zsh``.
 
 .. _talker-listener:
 

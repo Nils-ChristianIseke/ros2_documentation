@@ -449,7 +449,7 @@ In one shell:
 In another shell:
 
 .. code-block:: console
-  
+
   $ ros2 service list -t
   /rosbag2_player/get_rate [rosbag2_interfaces/srv/GetRate]
   /rosbag2_player/is_paused [rosbag2_interfaces/srv/IsPaused]

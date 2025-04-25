@@ -98,12 +98,12 @@ To change it to user data contents with metadata:
 To change it to only metadata:
 
 .. code-block:: console
-    
+
     $ ros2 param set /fibonacci_action_server action_server_configure_introspection metadata
 
 To disable:
 
-.. code-block:: console:
+.. code-block:: console
 
     $ ros2 param set /fibonacci_action_server action_server_configure_introspection disabled
 
@@ -159,7 +159,7 @@ To change it to user data contents with metadata:
 .. code-block:: console
 
     $ ros2 param set /fibonacci_action_client action_client_configure_introspection contents
-    
+
 To change it to only metadata:
 
 .. code-block:: console
@@ -169,6 +169,7 @@ To change it to only metadata:
 To disable:
 
 .. code-block:: console
+
     $ ros2 param set /fibonacci_action_client action_client_configure_introspection disabled
 
 

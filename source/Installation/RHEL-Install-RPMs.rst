@@ -121,9 +121,9 @@ Set up your environment by sourcing the following file.
    $ source /opt/ros/{DISTRO}/setup.bash
 
 .. note::
-   
-   Replace ".bash" with your shell if you're not using console
-   Possible values are: setup.bash, setup.sh, setup.zsh
+
+   Replace ``.bash`` with your shell if you're not using console.
+   Possible values are: ``setup.bash``, ``setup.sh``, ``setup.zsh``.
 
 Try some examples
 -----------------

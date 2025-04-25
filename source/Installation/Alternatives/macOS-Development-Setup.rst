@@ -37,11 +37,11 @@ You need the following things installed to build ROS 2:
 
         $ xcode-select --install
         $ sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
-   
+
    .. note::
       If you installed Xcode.app manually, you need to accept the Xcode.app license.
       You can do this by opening Xcode.app or running:
-      
+
       .. code-block:: console
 
          $ sudo xcodebuild -license

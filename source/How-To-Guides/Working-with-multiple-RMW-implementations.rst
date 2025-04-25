@@ -38,6 +38,7 @@ For example, to run the talker demo using the C++ talker and Python listener wit
 
 
     Run in one terminal:
+
     .. code-block:: console
 
        $ RMW_IMPLEMENTATION=rmw_connextdds ros2 run demo_nodes_cpp talker
@@ -55,10 +56,10 @@ For example, to run the talker demo using the C++ talker and Python listener wit
     .. code-block:: console
 
        $ RMW_IMPLEMENTATION=rmw_connextdds ros2 run demo_nodes_cpp talker
-   
+
     Run in another terminal:
-   
-   .. code-block:: console   
+
+   .. code-block:: console
 
        $ RMW_IMPLEMENTATION=rmw_connextdds ros2 run demo_nodes_py listener
 
@@ -137,6 +138,7 @@ and
 it will generate a daemon with a Fast DDS implementation:
 
 .. code-block:: bash
+
    21318 22.0  0.6 535896 55044 pts/8    Sl   16:14   0:00 /usr/bin/python3 /opt/ros/{DISTRO}/bin/_ros2_daemon --rmw-implementation rmw_fastrtps_cpp --ros-domain-id 0
 
 Even if you run the command line tool again with the correct RMW implementation, the daemon's RMW implementation will not change and the ROS 2 command line tools will fail.
